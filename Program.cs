@@ -7,6 +7,7 @@ namespace DO_Condiion
         static void Main(string[] args)
         {
             bool switCat = true;
+
             do
             {
                 if (switCat)
@@ -19,7 +20,7 @@ namespace DO_Condiion
                     Console.WriteLine("Here a cute Dog");
                     Console.WriteLine("Do you want to see a Cat?");
                 }
-                switCat = !switCat;
+                switCat = !switCat;//ทำการเปลี่ยนค่าในตัวแปร switCat จาก true เป็น false เพื่อให้เข้าไปทำงานใน else ได้
             } while (Console.ReadLine() == "yes");
         }
     }
