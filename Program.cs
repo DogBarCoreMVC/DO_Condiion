@@ -24,10 +24,3 @@ namespace DO_Condiion
         }
     }
 }
-
-/*Console.WriteLine("Here a cute Cat");
-Console.WriteLine("Do you want to see a Dog? (input yes)");
-
-Console.WriteLine("Here a cute Dog");
-Console.WriteLine("Do you want to see a Cat? (input yes)");*/
-
