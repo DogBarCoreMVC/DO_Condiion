@@ -6,21 +6,28 @@ namespace DO_Condiion
     {
         static void Main(string[] args)
         {
-            string select = "";
-
+            bool switCat = true;
             do
             {
-                Console.WriteLine("Here a cute Cat");
-                Console.WriteLine("Do you want to see a Dog? (input yes)");
-                select = Console.ReadLine();
-
-                Console.WriteLine("Here a cute Dog");
-                Console.WriteLine("Do you want to see a Cat? (input yes)");
-                select = Console.ReadLine();
-
-            } while (select == "yes");
-            Console.WriteLine("\n");
-            Console.WriteLine("Good Bye");
+                if (switCat)
+                {
+                    Console.WriteLine("Here a cute Cat");
+                    Console.WriteLine("Do you want to see a Dog?");
+                }
+                else
+                {
+                    Console.WriteLine("Here a cute Dog");
+                    Console.WriteLine("Do you want to see a Cat?");
+                }
+                switCat = !switCat;
+            } while (Console.ReadLine() == "yes");
         }
     }
 }
+
+/*Console.WriteLine("Here a cute Cat");
+Console.WriteLine("Do you want to see a Dog? (input yes)");
+
+Console.WriteLine("Here a cute Dog");
+Console.WriteLine("Do you want to see a Cat? (input yes)");*/
+
